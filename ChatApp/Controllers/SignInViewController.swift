@@ -22,10 +22,17 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func signInClicked(_ sender: UIButton) {
-        if emailField.text! != "" && passwordField.text! != "" {
-            
+        if emailField.text != "" && passwordField.text != "" {
+            Auth.auth().signIn(withEmail: emailField.text!, password: passwordField.text!) { result, error in
+                if let error = error {
+                    self.callAlert(message: error.localizedDescription)
+                } else {
+                    self.performSegue(withIdentifier: "goToMain", sender: self)
+                }
+            }
+        } else {
+            callAlert(message: "Invalid email or password")
         }
-        
     }
     
     func setLayout() {
@@ -61,6 +68,14 @@ class SignInViewController: UIViewController {
             }
             
         }
+    }
+    
+    
+    func callAlert(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let button = UIAlertAction(title: "OK!", style: UIAlertAction.Style.default, handler: nil)
+        alert.addAction(button)
+        self.present(alert, animated: true, completion: nil)
     }
     /*
      // MARK: - Navigation
