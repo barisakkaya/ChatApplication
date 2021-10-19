@@ -7,26 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E45BFBB0271DC7490005BEFE /* signUp.json in Resources */ = {isa = PBXBuildFile; fileRef = E45BFBAF271DC7490005BEFE /* signUp.json */; };
+		E45BFBB2271EBBAF0005BEFE /* dance.json in Resources */ = {isa = PBXBuildFile; fileRef = E45BFBB1271EBBAF0005BEFE /* dance.json */; };
 		E4BB43BD271D8CBC001292C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB43BC271D8CBC001292C6 /* AppDelegate.swift */; };
 		E4BB43BF271D8CBC001292C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB43BE271D8CBC001292C6 /* SceneDelegate.swift */; };
-		E4BB43C1271D8CBC001292C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB43C0271D8CBC001292C6 /* ViewController.swift */; };
+		E4BB43C1271D8CBC001292C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB43C0271D8CBC001292C6 /* LoginViewController.swift */; };
 		E4BB43C4271D8CBC001292C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4BB43C2271D8CBC001292C6 /* Main.storyboard */; };
 		E4BB43C6271D8CC1001292C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BB43C5271D8CC1001292C6 /* Assets.xcassets */; };
 		E4BB43C9271D8CC1001292C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4BB43C7271D8CC1001292C6 /* LaunchScreen.storyboard */; };
+		E4BB43D2271D9762001292C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BB43D1271D9762001292C6 /* GoogleService-Info.plist */; };
+		E4BB43D4271DA22E001292C6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB43D3271DA22E001292C6 /* SignInViewController.swift */; };
+		E4BB43D6271DA240001292C6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB43D5271DA240001292C6 /* SignUpViewController.swift */; };
+		E4BB43D9271DA4F6001292C6 /* whatsapp.json in Resources */ = {isa = PBXBuildFile; fileRef = E4BB43D8271DA4F6001292C6 /* whatsapp.json */; };
 		F1E10FFBE8FAF0B72556C26B /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C49F58B360A0C6391376FCE /* Pods_ChatApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		228DE72F964AF7CD368774B3 /* Pods-ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.release.xcconfig"; path = "Target Support Files/Pods-ChatApp/Pods-ChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		6C49F58B360A0C6391376FCE /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45BFBAF271DC7490005BEFE /* signUp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = signUp.json; sourceTree = "<group>"; };
+		E45BFBB1271EBBAF0005BEFE /* dance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dance.json; sourceTree = "<group>"; };
 		E4BB43B9271D8CBC001292C6 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BB43BC271D8CBC001292C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4BB43BE271D8CBC001292C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E4BB43C0271D8CBC001292C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4BB43C0271D8CBC001292C6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E4BB43C3271D8CBC001292C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4BB43C5271D8CC1001292C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4BB43C8271D8CC1001292C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4BB43CA271D8CC1001292C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4BB43D1271D9762001292C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E4BB43D3271DA22E001292C6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E4BB43D5271DA240001292C6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E4BB43D8271DA4F6001292C6 /* whatsapp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = whatsapp.json; sourceTree = "<group>"; };
 		F60BBA58D64A5251BAD25762 /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +68,6 @@
 				F60BBA58D64A5251BAD25762 /* Pods-ChatApp.debug.xcconfig */,
 				228DE72F964AF7CD368774B3 /* Pods-ChatApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +92,37 @@
 		E4BB43BB271D8CBC001292C6 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				E4BB43D7271DA249001292C6 /* Controllers */,
 				E4BB43BC271D8CBC001292C6 /* AppDelegate.swift */,
 				E4BB43BE271D8CBC001292C6 /* SceneDelegate.swift */,
-				E4BB43C0271D8CBC001292C6 /* ViewController.swift */,
 				E4BB43C2271D8CBC001292C6 /* Main.storyboard */,
+				E4BB43D0271D9716001292C6 /* Animations */,
 				E4BB43C5271D8CC1001292C6 /* Assets.xcassets */,
 				E4BB43C7271D8CC1001292C6 /* LaunchScreen.storyboard */,
 				E4BB43CA271D8CC1001292C6 /* Info.plist */,
+				E4BB43D1271D9762001292C6 /* GoogleService-Info.plist */,
 			);
 			path = ChatApp;
+			sourceTree = "<group>";
+		};
+		E4BB43D0271D9716001292C6 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				E45BFBB1271EBBAF0005BEFE /* dance.json */,
+				E4BB43D8271DA4F6001292C6 /* whatsapp.json */,
+				E45BFBAF271DC7490005BEFE /* signUp.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		E4BB43D7271DA249001292C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4BB43C0271D8CBC001292C6 /* LoginViewController.swift */,
+				E4BB43D3271DA22E001292C6 /* SignInViewController.swift */,
+				E4BB43D5271DA240001292C6 /* SignUpViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4BB43C9271D8CC1001292C6 /* LaunchScreen.storyboard in Resources */,
+				E45BFBB0271DC7490005BEFE /* signUp.json in Resources */,
+				E4BB43D9271DA4F6001292C6 /* whatsapp.json in Resources */,
+				E4BB43D2271D9762001292C6 /* GoogleService-Info.plist in Resources */,
 				E4BB43C6271D8CC1001292C6 /* Assets.xcassets in Resources */,
+				E45BFBB2271EBBAF0005BEFE /* dance.json in Resources */,
 				E4BB43C4271D8CBC001292C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,9 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4BB43C1271D8CBC001292C6 /* ViewController.swift in Sources */,
+				E4BB43D4271DA22E001292C6 /* SignInViewController.swift in Sources */,
+				E4BB43C1271D8CBC001292C6 /* LoginViewController.swift in Sources */,
 				E4BB43BD271D8CBC001292C6 /* AppDelegate.swift in Sources */,
 				E4BB43BF271D8CBC001292C6 /* SceneDelegate.swift in Sources */,
+				E4BB43D6271DA240001292C6 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
