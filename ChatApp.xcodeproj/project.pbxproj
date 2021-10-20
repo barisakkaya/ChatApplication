@@ -10,6 +10,9 @@
 		E45BFBB0271DC7490005BEFE /* signUp.json in Resources */ = {isa = PBXBuildFile; fileRef = E45BFBAF271DC7490005BEFE /* signUp.json */; };
 		E45BFBB2271EBBAF0005BEFE /* dance.json in Resources */ = {isa = PBXBuildFile; fileRef = E45BFBB1271EBBAF0005BEFE /* dance.json */; };
 		E45BFBB5271ED6520005BEFE /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45BFBB4271ED6520005BEFE /* ChatViewController.swift */; };
+		E45BFBB8271EF8120005BEFE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45BFBB7271EF8120005BEFE /* Message.swift */; };
+		E45BFBBD272018220005BEFE /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45BFBBB272018220005BEFE /* MessageTableViewCell.swift */; };
+		E45BFBC427207BA30005BEFE /* UILabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45BFBC327207BA30005BEFE /* UILabelPadding.swift */; };
 		E4BB43BD271D8CBC001292C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB43BC271D8CBC001292C6 /* AppDelegate.swift */; };
 		E4BB43BF271D8CBC001292C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB43BE271D8CBC001292C6 /* SceneDelegate.swift */; };
 		E4BB43C1271D8CBC001292C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BB43C0271D8CBC001292C6 /* LoginViewController.swift */; };
@@ -29,6 +32,9 @@
 		E45BFBAF271DC7490005BEFE /* signUp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = signUp.json; sourceTree = "<group>"; };
 		E45BFBB1271EBBAF0005BEFE /* dance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dance.json; sourceTree = "<group>"; };
 		E45BFBB4271ED6520005BEFE /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		E45BFBB7271EF8120005BEFE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E45BFBBB272018220005BEFE /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		E45BFBC327207BA30005BEFE /* UILabelPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelPadding.swift; sourceTree = "<group>"; };
 		E4BB43B9271D8CBC001292C6 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BB43BC271D8CBC001292C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4BB43BE271D8CBC001292C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +79,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E45BFBB6271EF7F60005BEFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E45BFBB7271EF8120005BEFE /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E4BB43B0271D8CBC001292C6 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +108,7 @@
 		E4BB43BB271D8CBC001292C6 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				E45BFBB6271EF7F60005BEFE /* Models */,
 				E4BB43D7271DA249001292C6 /* Controllers */,
 				E4BB43BC271D8CBC001292C6 /* AppDelegate.swift */,
 				E4BB43BE271D8CBC001292C6 /* SceneDelegate.swift */,
@@ -124,6 +139,8 @@
 				E4BB43D3271DA22E001292C6 /* SignInViewController.swift */,
 				E4BB43D5271DA240001292C6 /* SignUpViewController.swift */,
 				E45BFBB4271ED6520005BEFE /* ChatViewController.swift */,
+				E45BFBBB272018220005BEFE /* MessageTableViewCell.swift */,
+				E45BFBC327207BA30005BEFE /* UILabelPadding.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -247,12 +264,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45BFBC427207BA30005BEFE /* UILabelPadding.swift in Sources */,
 				E4BB43D4271DA22E001292C6 /* SignInViewController.swift in Sources */,
 				E4BB43C1271D8CBC001292C6 /* LoginViewController.swift in Sources */,
 				E4BB43BD271D8CBC001292C6 /* AppDelegate.swift in Sources */,
 				E4BB43BF271D8CBC001292C6 /* SceneDelegate.swift in Sources */,
 				E45BFBB5271ED6520005BEFE /* ChatViewController.swift in Sources */,
+				E45BFBBD272018220005BEFE /* MessageTableViewCell.swift in Sources */,
 				E4BB43D6271DA240001292C6 /* SignUpViewController.swift in Sources */,
+				E45BFBB8271EF8120005BEFE /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +428,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -437,6 +458,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

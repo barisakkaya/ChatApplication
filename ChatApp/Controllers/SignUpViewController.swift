@@ -45,6 +45,8 @@ class SignUpViewController: UIViewController {
     }
     
     func setLayout() {
+        passwordField.textContentType = .newPassword
+        passwordField.passwordRules = UITextInputPasswordRules(descriptor: "required: upper; required: lower; required: digit; max-consecutive: 2; minlength: 8;")
         animationView = AnimationView(name: "signUp")
         animationView?.loopMode = .loop
         animationView?.animationSpeed = 1.0
