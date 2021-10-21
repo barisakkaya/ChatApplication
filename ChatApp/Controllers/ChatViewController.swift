@@ -49,7 +49,6 @@ class ChatViewController: UIViewController {
         db.collection("Chats")
             .order(by: "date")
             .addSnapshotListener { (querySnapshot, error) in
-                
                 self.messages.removeAll()
                 
                 if let error = error {
@@ -60,12 +59,14 @@ class ChatViewController: UIViewController {
                             let data = doc.data()
                             if let messageSender = data["sender"] as? String, let messageBody = data["message"] as? String {
                                 let newMessage = Message(sender: messageSender, messageBody: messageBody)
+                                print("Sender \(messageSender)")
                                 self.messages.append(newMessage)
                             }
+                            
                         }
                         DispatchQueue.main.async {
-                            self.messageTableView.reloadData()
                             if self.messages.count > 0 {
+                                self.messageTableView.reloadData()
                                 let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
                                 self.messageTableView.scrollToRow(at: indexPath, at: .top, animated: false)
                             }
@@ -127,6 +128,9 @@ class ChatViewController: UIViewController {
             make.top.equalTo(height * 0.015)
             make.bottom.equalTo(height * -0.015)
         }
+        cell.label.backgroundColor = .white
+        cell.label.layer.cornerRadius = 10
+        cell.label.layer.masksToBounds = true
         
     }
     func setCellLayoutRight(cell: inout MessageTableViewCell, height: CGFloat, width: CGFloat) {
@@ -137,8 +141,10 @@ class ChatViewController: UIViewController {
             make.height.equalTo(height * 0.07)
             make.top.equalTo(height * 0.015)
             make.bottom.equalTo(height * -0.015)
-            
         }
+        cell.label.backgroundColor = UIColor(named: "whatsapp")
+        cell.label.layer.cornerRadius = 10
+        cell.label.layer.masksToBounds = true
     }
     func closeKeyboard(){
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
@@ -153,13 +159,6 @@ class ChatViewController: UIViewController {
     
     
 }
-extension UILabel {
-
-open override func draw(_ rect: CGRect) {
-    let inset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-    super.draw(rect.inset(by: inset))
-    
-}}
 
 extension ChatViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -174,22 +173,26 @@ extension ChatViewController: UITableViewDataSource {
         let message = messages[indexPath.row]
         
         if message.sender == Auth.auth().currentUser?.email {
-            cell.label.backgroundColor = UIColor(named: "whatsapp")
-            cell.label.layer.cornerRadius = 10
-            cell.label.layer.masksToBounds = true
             setCellLayoutRight(cell: &cell, height: height, width: width)
+            print("Hwargi right")
             
         } else {
-            cell.label.backgroundColor = .white
-            cell.label.layer.cornerRadius = 10
-            cell.label.layer.masksToBounds = true
             setCellLayoutLeft(cell: &cell, height: height, width: width)
+            print("Hwargi left")
         }
         
         cell.label.text = message.messageBody
+        
+        print("message \(message.messageBody) \(message.sender)")
 
         return cell
     }
-    
-    
 }
+
+extension UILabel {
+
+open override func draw(_ rect: CGRect) {
+    let inset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+    super.draw(rect.inset(by: inset))
+    
+}}
